@@ -13,6 +13,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 Route::get('/', function () {
-    return view('welcome');
+
+    $data = [
+        'header' => [
+            'home', 'lavora_con_noi', 'contatti', 'prodotti'
+        ]
+    ];
+
+    return view('home', $data);
+});
+
+Route::get('/contatti', function () {
+    return view('contatti');
+});
+Route::get('/prodotti', function () {
+    return view('prodotti');
+});
+Route::get('/lavora_con_noi', function () {
+    return view('lavora_con_noi');
 });
