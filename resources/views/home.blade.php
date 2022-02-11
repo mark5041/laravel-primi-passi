@@ -11,7 +11,7 @@
     <ul class="nav justify-content-center">
         @foreach ($header as $element)  
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/{{$element}}">{{$element}}</a>
+            <a class="nav-link active" aria-current="page" href="{{route($element)}}">{{$element}}</a>
         </li>
         @endforeach
     </ul>

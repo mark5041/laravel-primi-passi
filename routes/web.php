@@ -26,14 +26,16 @@ Route::get('/', function () {
     ];
 
     return view('home', $data);
-});
+})->name('home');
 
 Route::get('/contatti', function () {
     return view('contatti');
-});
+})->name('contatti');
+
 Route::get('/prodotti', function () {
     return view('prodotti');
-});
+})->name('prodotti');
+
 Route::get('/lavora_con_noi', function () {
     return view('lavora_con_noi');
-});
+})->name('lavora_con_noi');
